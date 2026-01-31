@@ -460,7 +460,24 @@ li {
     background-color:#f4f6f4; 
     background-position:center center; 
     background-repeat:no-repeat; 
-    background-image:url(../images/icon/preloader.gif);
+    /* background-image:url(../images/icon/preloader.gif); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* SPINNER */
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #e0e0e0;
+    border-top: 4px solid #1a76e7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 
@@ -934,7 +951,7 @@ select:focus {
 /*==============================================
     Top bar Style3 Css
 ===============================================*/
-.top-bar-style3{
+/* .top-bar-style3{
     position: relative;
     display: block;
     padding: 15.5px 0;
@@ -971,14 +988,14 @@ select:focus {
     font-size: 18px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
-}
+} */
 
 
 
 /*==============================================
     Header Area Css        
 ===============================================*/
-.header-style1-area {
+/* .header-style1-area {
     position: relative;
     display: block;
     background: #ffffff;
@@ -1068,7 +1085,7 @@ select:focus {
     color: #2bb4e6;
     font-size: 24px;
     font-family: 'Rubik', sans-serif;
-}
+} */
 
 
 
@@ -1099,7 +1116,7 @@ select:focus {
     float: left;
     margin-right: 28px;
     padding-right: 28px;
-    border-right: 1px solid #ebebeb;
+    border-right: 1px solid rgba(255,255,255,0.25);
 }
 .headers2-header-right ul li:last-child{
     margin-right: 0;
@@ -1108,7 +1125,7 @@ select:focus {
 }
 .headers2-header-right ul li .single-item{}
 .headers2-header-right ul li .single-item p{
-    color: #2f2f2f;
+    color: #CFE3FF;
     text-transform: uppercase;
     margin: 0 0 3px;
 }
@@ -1117,15 +1134,15 @@ select:focus {
     top: 1px;
     font-size: 20px;
     line-height: 20px;
-    color: #1a76e7;
+    color: #6FB1FF;
     display: inline-block;
     padding-right: 10px;
 }
 .headers2-header-right ul li .single-item span{
-    color: #848484;    
+    color: #f9fbff;    
 }
 .headers2-header-right ul li .single-item h3 {
-    color: #1a76e7;
+    color: #6FB1FF;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1135,7 +1152,7 @@ select:focus {
 .headers2-header-right ul li .single-item h3 span{
     position: relative;
     top: 2px;
-    color: #2f2f2f;
+    color:#FFFFFF;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
@@ -1148,7 +1165,7 @@ select:focus {
 /*==============================================
     Header Style3 Area Css        
 ===============================================*/
-.header-style3-area {
+/* .header-style3-area {
     display: block;
     background: #151515;
     padding: 25px 0;
@@ -1254,7 +1271,7 @@ select:focus {
     top: 4px;
     transform: rotate(-135deg);
 }
-
+ */
 
 
 /*** 
@@ -1564,7 +1581,7 @@ select:focus {
 	Mainmenu Area Style3 style
 =====================================================
 ***/
-.mainmenu-area.style3{}
+/* .mainmenu-area.style3{}
 .mainmenu-area.style3 .logo {
     margin: 24px 0 25px;
     margin-right: 170px;
@@ -1658,7 +1675,7 @@ select:focus {
     top: 4px;
     transform: rotate(-135deg);
 }
-
+ */
 
 
 /*** 
@@ -1791,7 +1808,7 @@ select:focus {
 	Mainmenu Area style4
 =====================================================
 ***/
-.mainmenu-area.style4{
+/* .mainmenu-area.style4{
     position: relative;
     display: block;
     background: #ffffff;
@@ -1862,14 +1879,14 @@ select:focus {
     font-family: 'Titillium Web', sans-serif;
 }
 
-
+ */
 
 /*** 
 =====================================================
 	Main Slider style
 =====================================================
 ***/
-.main-slider {
+/* .main-slider {
     position: relative;
     z-index: 10;
 }
@@ -1973,7 +1990,7 @@ select:focus {
 
 
 
-
+ */
 
 
 
@@ -1982,7 +1999,7 @@ select:focus {
     Call To Action Area style      
 =============================================
 ***/
-.call-to-action-area{
+/* .call-to-action-area{
     position: relative;
     display: block;
     background: #083061;
@@ -2074,7 +2091,7 @@ select:focus {
 }
 .callto-action ul .single-box:hover .inner a{
     color: #2bb4e6;    
-}
+} */
 
 
 
@@ -2309,9 +2326,45 @@ select:focus {
     }
 }
 
+
+/*
+expetise Section  
+ */
+    .expertise-area {
+    padding: 80px 0;
+}
+
+.expertise-card {
+    background:rgba(255, 255, 255, 0.85);;
+;
+    border-radius: 12px;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.expertise-card i {
+    font-size: 38px;
+    color: #1a76e7;
+    margin-bottom: 10px;
+}
+
+.expertise-card h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.expertise-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
 /*** 
 =============================================
-    Services style2 Area Style      
+    Services category style2 Area Style      
 =============================================
 ***/
 .services-style2-area{
@@ -2863,7 +2916,7 @@ select:focus {
     Appointment Style3 Area Style
 =============================================
 ***/
-.appointment-style3-area{
+/* .appointment-style3-area{
     position: relative;
     display: block;  
 }
@@ -2927,7 +2980,7 @@ select:focus {
 }
 .appointment-right-style3 .inner-content .more-answer a{
     color: #3aabd0;    
-}
+} */
 
 
 
@@ -2936,7 +2989,7 @@ select:focus {
     Latest blog Area style
 =============================================
 ***/
-.latest-blog-area {
+/* .latest-blog-area {
     background: #ffffff;
     position: relative;
     display: block;
@@ -3062,7 +3115,7 @@ select:focus {
 .single-blog-post .text-holder .meta-box .meta-info li a span{
     color: #2bb4e6;
 }
-
+ */
 
 
 /*** 
@@ -3070,14 +3123,14 @@ select:focus {
     Latest blog area style2 style
 =============================================
 ***/
-.latest-blog-area.style2{}
+/* .latest-blog-area.style2{}
 .single-blog-post.style2 .text-holder .meta-box .meta-info li a span {
     color: #1a76e7;
 }
 .single-blog-post.style2 .overlay-style-one .box .content a.readmore {
     color: #2f2f2f;
 }
-
+ */
 
 
 /*** 
@@ -3085,7 +3138,7 @@ select:focus {
     Latest blog area style2 style
 =============================================
 ***/
-.latest-blog-area.style3{
+/* .latest-blog-area.style3{
     position: relative;
     display: block;
     background: #f5f5f5;
@@ -3162,7 +3215,7 @@ select:focus {
 .latest-blog-area.style3 .owl-dots .owl-dot.active{
     border-color: #3aabd0;
 }
-
+ */
 
 
 /*** 
@@ -3170,7 +3223,7 @@ select:focus {
 	Testimonials area Style
 ==========================================================
 ***/
-.testimonial-area{
+/* .testimonial-area{
     position: relative;
     display: block;
     background: #ffffff;
@@ -3300,7 +3353,7 @@ select:focus {
     background: #eef3f7;
     border-color: #eef3f7;
     color: #000000;
-}
+} */
 
 
 
@@ -3309,7 +3362,7 @@ select:focus {
     Brand Area Style      
 =============================================
 ***/
-.brand-area{
+/* .brand-area{
     position: relative;
     display: block;
 }
@@ -3333,7 +3386,7 @@ select:focus {
 .brand-area .brand li a img{
     width: auto;
 }
-
+ */
 
 
 /*** 
@@ -3349,6 +3402,55 @@ select:focus {
     padding: 0;
 }
 
+.brand-slider {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+}
+
+.brand-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 25s linear infinite;
+}
+
+.brand-track li {
+    list-style: none;
+    flex: 0 0 auto;
+    width: 160px;          /* SAME SIZE */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+
+.brand-track img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.brand-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ANIMATION */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* OPTIONAL: pause on hover */
+.brand-slider:hover .brand-track {
+    animation-play-state: paused;
+}
 
 
 /*** 
@@ -3356,7 +3458,7 @@ select:focus {
     Brand Area Style3     
 =============================================
 ***/
-.brand-area.style3 .brand {
+/* .brand-area.style3 .brand {
     border: 0px solid;
     padding: 75px 0 30px;
 }
@@ -3370,7 +3472,7 @@ select:focus {
     margin-right: 0;
 }
 
-
+ */
 
 /*** 
 =============================================
@@ -3598,7 +3700,7 @@ select:focus {
 =============================================
 ***/
 .footer-area.style2{
-    background: #151515;
+    background: #0E3F8A;
 }
 .footer-area.style2 .single-footer-widget .title:before{
     background: #1a76e7;    
@@ -3610,41 +3712,41 @@ select:focus {
     border-color: #505050;    
 }
 .footer-area.style2 .state-content ul li .text p{
-    color: #848484; 
+    color: #f9fbff; 
     transition: all 500ms ease;
 }
 .footer-area.style2 .state-content ul li:hover .text p{
-    color: #ffffff;
+    color: #0022FF;
 }
 .footer-area.style2 .single-footer-widget .quick-links li a{
-    color: #848484;    
+    color: #f9fbff;    
 }
 .footer-area.style2 .single-footer-widget .quick-links li a:hover{
-    color: #ffffff;
+    color: #0022FF;
 }
 .footer-area.style2 .single-footer-widget .map-find {
     border-top: 1px solid #282828;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form input::-webkit-input-placeholder {
-    color: #848484;
+    color: #f9fbff;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form input:-moz-placeholder {
-    color: #848484;
+    color: #f9fbff;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form input::-moz-placeholder {
-    color: #848484;
+    color: #f9fbff;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form input:-ms-input-placeholder {
-    color: #848484;
+    color: #f9fbff;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form form input[type=text] {
     border-bottom: 1px solid #282828;
 }
 .footer-area.style2 .single-footer-widget .footer-social-links ul li a i{
-    color: #ffffff;    
+    color: #FFFFFF;    
 }
 .footer-area.style2 .single-footer-widget .footer-social-links ul li a:hover i{
-    color: #1a76e7;
+    color: #0022FF;
 }
 .footer-area.style2 .single-footer-widget .subscribe-form form button{
     background: #1a76e7;
@@ -3652,7 +3754,7 @@ select:focus {
 .footer-area.style2 .single-footer-widget .subscribe-form form input[type=text]:focus + button, 
 .footer-area.style2 .single-footer-widget .subscribe-form form button:hover {
     background: #cb2906 none repeat scroll 0 0;
-    color: #ffffff;
+    color: #0022FF;
 }
 
 .single-footer-widget.clrdeep .title:before {
@@ -3679,7 +3781,7 @@ select:focus {
     Footer area Style3 style
 =============================================
 ***/
-.footer-area.style3{
+/* .footer-area.style3{
     background: #151515;
 }
 .footer-area.style3 .single-footer-widget .title:before{
@@ -3735,7 +3837,7 @@ select:focus {
 .footer-area.style3 .single-footer-widget .subscribe-form form button:hover {
     background: #068cb8 none repeat scroll 0 0;
     color: #ffffff;
-}
+} */
 
 
 
@@ -3785,11 +3887,11 @@ select:focus {
 =============================================
 ***/
 .footer-bottom-area.style2{
-    background: #151515; 
+    background: #0E3F8A; 
     border-top: 1px solid #282828;
 }
 .footer-bottom-area .copyright-text p{
-    color: #848484;    
+    color: #ffffff;    
 }
 
 
@@ -3799,7 +3901,7 @@ select:focus {
     Footer Bottom Area Style3 Style      
 =============================================
 ***/
-.footer-bottom-area.style3{
+/* .footer-bottom-area.style3{
     background: #151515; 
     border-top: 1px solid #282828;
 }
@@ -3808,7 +3910,7 @@ select:focus {
 }
 .footer-bottom-area.style3 .copyright-text p span{
     color: #3aabd0;
-}
+} */
 
 
 
@@ -3836,6 +3938,7 @@ select:focus {
     height: 300px;
     z-index: 1;
     padding: 130px 0;
+    
 }
 .why-choose .title:before{
     position: absolute;
@@ -3843,15 +3946,17 @@ select:focus {
     left: 0;
     width: 290px;
     height: 300px;
-    background: url(../images/pattern/choose-title.jpg);
+    background: url(../images/pattern/why-choose-us1.png);
     content: "";
     z-index: -1;
+    border-radius: 8px;
 }
 .why-choose .title h1{
     color: #ffffff;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    background-color: white;
 }
 
 .why-choose .content-box {
@@ -3863,6 +3968,7 @@ select:focus {
     width: 100%;
     background: #ffffff;
     min-height: 300px;
+    border-radius: 8px;
 }
 .why-choose .content-box ul {
     display: block;
@@ -3928,7 +4034,7 @@ select:focus {
     Services Process Area Style2 Style      
 =============================================
 ***/
-.services-process-area {
+/* .services-process-area {
     position: relative;
     display: block;
     background: #f5f5f5;
@@ -4056,7 +4162,7 @@ select:focus {
     position: absolute;
     bottom: 0;
     left: 37px;
-}
+} */
 
 
 
@@ -4065,7 +4171,7 @@ select:focus {
     Specialities area style
 =============================================
 ***/
-.specialities-area{
+/* .specialities-area{
     background-attachment: scroll;
     background-position: center top;
     background-repeat: no-repeat;
@@ -4226,7 +4332,7 @@ select:focus {
 .specialities-content .inner-content .button{
     display: block;
     padding-top: 28px;
-}
+} */
 
 
 
@@ -4325,6 +4431,64 @@ select:focus {
     line-height: 52px;
 }
 
+/* CLEAN MODERN CARD – INSIDE ONLY */
+.single-fact-counter {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 40px 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* SUBTLE HOVER (NOT AGGRESSIVE) */
+.single-fact-counter:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON HOLDER – SOFT CIRCLE */
+.single-fact-counter .icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: rgba(26,118,231,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ICON SIZE FIX */
+.single-fact-counter .icon span:before {
+    font-size: 38px;
+    color: #1a76e7;
+}
+
+/* COUNTER NUMBER */
+.single-fact-counter h1 span {
+    font-size: 42px;
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+/* REMOVE OLD LINE & BOX */
+.single-fact-counter .count-box .title {
+    border-bottom: none;
+    margin-top: 15px;
+}
+
+/* CLEAN TITLE TEXT */
+.single-fact-counter .count-box .title h3 {
+    background: none;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
 
 
 /*** 
@@ -4358,7 +4522,7 @@ select:focus {
 }
 .single-gallery-item .img-holder img {
     width: 100%;
-    transition: all 1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 .single-gallery-item:hover .img-holder img {  
     transform:scale(1.1);
@@ -4442,7 +4606,7 @@ select:focus {
 	Feedback Section
 ====================================================================
 ***/
-.feedback-section{
+/* .feedback-section{
 	position:relative;
 	display: block;
 }
@@ -4677,7 +4841,7 @@ select:focus {
 .feedback-section .inner-content .video-holder:hover img {
     transform: scale(1.1);
 }
-
+ */
 
 
 /*** 
@@ -11380,8 +11544,54 @@ select:focus {
 }
 
 
+/* 
+floating call to action cta buttons
+*/
 
+/* FLOATING CTA CONTAINER */
+.floating-cta {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* COMMON BUTTON STYLE */
+.cta-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+/* WHATSAPP */
+.cta-btn.whatsapp {
+    background: #25D366;
+}
+
+/* PHONE */
+.cta-btn.phone {
+    background: #1a76e7;
+}
+
+/* HOVER EFFECT */
+.cta-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
 
 
 
