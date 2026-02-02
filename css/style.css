@@ -4953,7 +4953,14 @@ expetise Section
     color: #2f2f2f;
 }
 
+.about-v2-area .about-right-content .img-holder img{
+    box-shadow: 
+    0 4px 10px rgba(0, 0, 0, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.12);
 
+
+
+}
 
 /*** 
 =============================================
