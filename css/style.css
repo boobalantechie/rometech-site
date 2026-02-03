@@ -1194,6 +1194,17 @@ select:focus {
     }
 }
 
+@media (max-width: 768px) and (hover: hover) {
+    .header-style2-area .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+    }
+}
+.header-style2-area .inner-content {
+    width: 100%;
+}
+
 
 
 
