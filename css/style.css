@@ -1159,6 +1159,42 @@ select:focus {
     display: inline-block;
     padding-left: 10px;
 }
+/* ------------------------------- */
+/* Header layout fix | moving logo to the left side in mobile's desktop view  */ 
+.header-style2-area .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headers2-header-right ul {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) and (pointer: coarse) {
+
+    .header-style2-area .inner-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headers2-header-right ul {
+        display: block;
+        width: 100%;
+    }
+
+    .headers2-header-right ul li {
+        display: block;
+        float: none;
+        border-right: none;
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+
+
 
 
 
